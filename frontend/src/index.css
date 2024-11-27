@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #05101c;
+  color: white;
+  font-family: "fira sans", "work sans", serif;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.9vw;
+  background: #777;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(transparent, #1976d2);
+  background: linear-gradient(transparent, #1976d2);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-linear-gradient(transparent, #00c6ff);
+  background: linear-gradient(transparent, #00c6ff);
+}
+
+.nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
