@@ -1,0 +1,30 @@
+{
+  "name": "chatify-ai-personal-assistant",
+  "version": "1.0.0",
+  "description": "Chatify AI Personal Assistant is an intelligent chat application powered by AI, designed to assist users with personalized responses, clear communication, and seamless chat experiences. The app integrates modern technologies to deliver a responsive, user-friendly interface and real-time conversational capabilities.",
+  "main": "app.js",
+  "scripts": {
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node dist/index.js",
+    "install-client": "cd frontend && npm install",
+    "build-client": "cd frontend && npm run build",
+    "start-client": "cd frontend && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PratikTomar/Chatify-AI"
+  },
+  "keywords": [
+    "AI Integration",
+    "User Authentication",
+    "API-driven App",
+    "RESTful APIs",
+    "JSON Web Tokens (JWT)",
+    "Cookie-based Authentication",
+    "Real-time Communication",
+    "Role-based Messages"
+  ],
+  "author": "Pratik Singh",
+  "license": "ISC",
+  "homepage": "https://github.com/PratikTomar/Chatify-AI#readme"
+}
