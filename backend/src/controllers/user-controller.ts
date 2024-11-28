@@ -39,7 +39,7 @@ const userLogin = async (req: Request, res: Response, next: NextFunction) => {
 
     res.clearCookie(COOKIE_NAME, {
       path: "/",
-      domain: ".onrender.com",
+      domain: "chatify-ai-api.onrender.com",
       httpOnly: true,
       signed: true,
     });
@@ -52,9 +52,10 @@ const userLogin = async (req: Request, res: Response, next: NextFunction) => {
 
     const expires = new Date();
     expires.setDate(expires.getDate() + 7);
+    
     res.cookie(COOKIE_NAME, token, {
       path: "/",
-      domain: ".onrender.com",
+      domain: "chatify-ai-api.onrender.com",
       expires,
       httpOnly: true,
       signed: true,
@@ -92,7 +93,7 @@ const userSignup = async (req: Request, res: Response, next: NextFunction) => {
 
     res.clearCookie(COOKIE_NAME, {
       path: "/",
-      domain: ".onrender.com",
+      domain: "chatify-ai-api.onrender.com",
       httpOnly: true,
       signed: true,
     });
@@ -103,7 +104,7 @@ const userSignup = async (req: Request, res: Response, next: NextFunction) => {
     expires.setDate(expires.getDate() + 7);
     res.cookie(COOKIE_NAME, token, {
       path: "/",
-      domain: ".onrender.com",
+      domain: "chatify-ai-api.onrender.com",
       expires,
       httpOnly: true,
       signed: true,
@@ -168,7 +169,7 @@ export const userLogout = async (
 
     res.clearCookie(COOKIE_NAME, {
       httpOnly: true,
-      domain: ".onrender.com",
+      domain: "chatify-ai-api.onrender.com",
       signed: true,
       path: "/",
     });
