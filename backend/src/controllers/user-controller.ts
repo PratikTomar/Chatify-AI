@@ -42,6 +42,8 @@ const userLogin = async (req: Request, res: Response, next: NextFunction) => {
       domain: "chatify-ai-api.onrender.com",
       httpOnly: true,
       signed: true,
+      secure: true,
+      sameSite: "none",
     });
 
     const token = createToken(
@@ -96,6 +98,8 @@ const userSignup = async (req: Request, res: Response, next: NextFunction) => {
       domain: "chatify-ai-api.onrender.com",
       httpOnly: true,
       signed: true,
+      secure: true,
+      sameSite: "none",
     });
 
     const token = createToken(user._id.toString(), user.email, "7d");
@@ -172,6 +176,8 @@ export const userLogout = async (
       domain: "chatify-ai-api.onrender.com",
       signed: true,
       path: "/",
+      secure: true,
+      sameSite: "none",
     });
 
     return res.status(200).json({
