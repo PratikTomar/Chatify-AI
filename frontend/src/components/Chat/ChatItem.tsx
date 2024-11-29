@@ -27,7 +27,6 @@ const ChatItem = ({
         bgcolor: "#111927",
         gap: 2,
         borderRadius: 2,
-        border: "2px solid #1976d2",
         my: 1,
         alignSelf: "flex-start",
       }}
@@ -41,7 +40,7 @@ const ChatItem = ({
       </Avatar>
       <Box>
         {!messageBlocks && (
-          <Typography sx={{ fontSize: "18px" }}>{content}</Typography>
+          <Typography sx={{ fontSize: { sm: "10px", md: "18px" }}}>{content}</Typography>
         )}
         {messageBlocks &&
           messageBlocks.map((block, index) =>
@@ -52,13 +51,13 @@ const ChatItem = ({
                   key={index}
                   style={coldarkDark}
                   language={extractLanguageFromCodeBlock(block)}
-                  customStyle={{ fontSize: "18px" }}
+                  customStyle={{ fontSize: "18px", overflowWrap: "break-word" }}
                 >
                   {block.replace(/^([a-zA-Z]+)\n/, "")}{" "}
                 </SyntaxHighlighter>
               </>
             ) : (
-              <Typography key={index} sx={{ fontSize: "18px" }}>
+              <Typography key={index} sx={{ fontSize: { sm: "10px", md: "18px" } }}>
                 {block}
               </Typography>
             )
@@ -74,7 +73,6 @@ const ChatItem = ({
         bgcolor: "#111927",
         gap: 2,
         borderRadius: 2,
-        border: "2px solid #1976d2",
         my: 1,
         mr: 2,
         alignSelf: "flex-end",
@@ -85,7 +83,7 @@ const ChatItem = ({
       </Avatar>
       <Box>
         {!messageBlocks && (
-          <Typography sx={{ fontSize: "18px", color: "white" }}>
+          <Typography sx={{ fontSize: { sm: "10px", md: "18px" }, color: "white" }}>
             {content}
           </Typography>
         )}
