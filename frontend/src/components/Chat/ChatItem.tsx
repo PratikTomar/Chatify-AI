@@ -40,7 +40,7 @@ const ChatItem = ({
       </Avatar>
       <Box>
         {!messageBlocks && (
-          <Typography sx={{ fontSize: { sm: "10px", md: "18px" }}}>{content}</Typography>
+          <Typography sx={{ fontSize: { xs: "14px", md: "18px" } }}>{content}</Typography>
         )}
         {messageBlocks &&
           messageBlocks.map((block, index) =>
@@ -57,7 +57,7 @@ const ChatItem = ({
                 </SyntaxHighlighter>
               </>
             ) : (
-              <Typography key={index} sx={{ fontSize: { sm: "10px", md: "18px" } }}>
+              <Typography key={index} sx={{ fontSize: { xs: "14px", md: "18px" } }}>
                 {block}
               </Typography>
             )
@@ -83,7 +83,7 @@ const ChatItem = ({
       </Avatar>
       <Box>
         {!messageBlocks && (
-          <Typography sx={{ fontSize: { sm: "10px", md: "18px" }, color: "white" }}>
+          <Typography sx={{ fontSize: { xs: "14px", md: "18px" }, color: "white" }}>
             {content}
           </Typography>
         )}
@@ -98,7 +98,7 @@ const ChatItem = ({
                 {block.replace(/^([a-zA-Z]+)\n/, "")}
               </SyntaxHighlighter>
             ) : (
-              <Typography key={index} sx={{ fontSize: "18px", color: "white" }}>
+              <Typography key={index} sx={{ fontSize: { xs: "14px", md: "18px" }, color: "white" }}>
                 {block}
               </Typography>
             )
