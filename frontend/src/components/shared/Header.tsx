@@ -21,7 +21,7 @@ const Header = () => {
         sx={{
           display: "flex",
           justifyContent: "space-evenly",
-          padding: { sm: "0", md: "0 20px" }
+          padding: { xs: "0", sm: "0", md: "0 20px" }
         }}
       >
         <Link to="/">
